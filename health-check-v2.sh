@@ -3,7 +3,7 @@
 LOG_FILE="/var/log/health-check.log"
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
-echo "[$TIMESTAMP] === Day 2 System Health Check ==="
+echo "[$TIMESTAMP] === Day 4 Docker Health Check ==="
 UPTIME=$(uptime -p)
 LOAD=$(uptime | awk '{print $(NF-2), $(NF-1), $NF}')
 MEMORY=$(free -h | awk '/Mem/ {print $3 "/" $2}')
